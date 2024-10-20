@@ -4,6 +4,7 @@
     justify-content: space-around;
     gap: 50px;
     background-color: #400b41;
+    max-width: 100%;
 
 }
 

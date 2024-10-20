@@ -3,10 +3,12 @@
     padding: 0;
     box-sizing: border-box;
     background-color: #400b41;
+    max-width: 100%;
 }
 
 .navegador-home-page{
     display: flex;
+    max-width: 100%;
 }
 .div{
     display: flex;
@@ -15,6 +17,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  max-width: 100%;
+
 }
 .lateral-app{
     display: flex;
@@ -54,16 +58,18 @@
 .chat-ppal{
     display: flex;
     flex-direction: row;
-    width: 100%;
+    max-width: 100%;
 }
 
 @media (max-width: 320px) {
     .navegador-home-page {
     display: none;
+    max-width: 100%;
     }
 
     .div {
         flex-direction: column; 
+        max-width: 100%;
     }
 
     .lateral-app {
