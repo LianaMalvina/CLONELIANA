@@ -1,0 +1,146 @@
+:root {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', sans-serif;
+    background-color: #400b41;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    background-color: #400b41;
+    justify-content: center;
+    height: 40px;
+    width: 100%; 
+    margin-top: 10px;
+}
+
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 40px;
+    gap: 20px;
+    align-content: center;
+    margin-top: 5px;
+    width: 100%; 
+    padding: 0;
+}
+
+
+.arrows {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 40px;
+    gap: 10px;
+}
+
+
+.arrow, .clock {
+    display: flex;
+    flex-direction: row;
+    border: none;
+    color: antiquewhite;
+    font-size: 20px;
+    margin-top: 6px;
+    background-color: #400b41;
+}
+.vacio-uno {
+    width: 250px;
+}
+
+.buscador {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px; 
+    width: 100%; 
+}
+
+
+.buscador-icon {
+    border: none;
+    background-color: #744676;
+    font-size: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    color: #fff;
+    width: 100%; 
+    height: 28px;
+    text-decoration: none;
+}
+
+
+.input-navbar {
+    border: none;
+    background-color: #744676;
+    color: white;
+    font-size: 15px;
+    border-radius: 8px;
+    height: 20px; 
+    cursor: pointer;
+    width: 100%; 
+    text-decoration: none;
+}
+input::-webkit-input-placeholder {
+    color:#ffff; 
+    text-decoration: none;
+}
+
+
+.interno-buscador {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    margin-right: 5px;
+    font-size: 20px;
+    background-color: #744676;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    color: #fff;
+}
+
+.pregunta-icon {
+    margin-top: 3px;
+    color: #ffff;
+    font-size: 25px;
+    border: none;
+    background-color: #400b41;
+}
+
+
+
+
+.vacio-dos {
+    width: 270px;
+}
+
+
+    @media (max-width: 320px) {
+        .header{
+            display: none;
+            overflow: hidden;
+            visibility: none;
+            background-color: #400b41;
+            padding: 0;
+            margin: 0;
+        }
+         .clock, .interno-buscador, .buscador-icon, .pregunta-icon{
+            display: none;
+            background-color: #400b41;
+            overflow: hidden;
+            visibility: none;
+            color: #400b41;
+        }
+  
+}

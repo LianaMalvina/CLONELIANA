@@ -1,0 +1,24 @@
+:root{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans',Verdana, sans-serif;
+}
+.canales-home{
+    display: flex;
+    width:100% ;
+   flex-direction: column;
+   gap:-20px;
+   align-items: flex-start;
+   text-align: start;
+   padding: 0;
+   color: #ffff;
+   margin-left: 10px;
+
+}
+.contenedor-otros-items{
+    color: #ffff;
+    display: flex;
+    width: 100%;
+    margin-left: 10px;
+}

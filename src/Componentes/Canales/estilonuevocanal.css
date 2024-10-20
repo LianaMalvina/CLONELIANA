@@ -1,0 +1,169 @@
+
+
+.padre-crear-canal{
+    width: 100%;
+ 
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ebe7eb;
+    justify-content: center;
+    text-align: center;
+}
+
+ .contenedor-crear-canal{
+    
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 95%;
+    display: grid;
+    margin-top: 50px;
+}
+.contenedor-form-crear-canal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    margin-top: -30px;
+    width: 95%;
+    gap: 30px
+
+}
+#crear-espacio-name, #crear-canal-name{
+    border: none;
+    outline: none;
+    color: rgb(177, 169, 169);
+    width: 95%;
+    border-radius: 3px;
+    cursor: pointer;
+    
+}
+
+.name-esp{
+    color: rgb(133, 127, 127);
+    margin-top: 10px;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.imagen-crear-canal{
+    width: 10%;
+    justify-content: center;
+    align-items: center;
+    
+   display: grid;
+
+}
+.mail-crear-canal{
+    font-size: 12px;
+    font-weight: 300;
+    background-color: rgb(241, 237, 237);
+    width: 25%;
+    justify-content: center;
+  
+    padding: 10px;
+    border-radius: 16px;
+    display: grid;
+}
+
+.form-crear-canal{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 40%;
+    gap:5px
+
+}
+.imagen-crear-canal-dos{
+    
+     border-radius: 12px;
+     width: 95%;
+     display: grid;
+}
+.h2-crear-nuevo{
+    font-weight: 1100;
+    margin-top: 50px;
+}
+.p-crear-nuevo{
+    font-weight: 100;
+    color: rgb(136, 133, 133);
+    width: 95%;
+    text-align: justify;
+    font-size: 12px;
+
+}
+
+.formulario-crear-canal{
+    box-shadow: 0 0 10px 1px rgb(155, 154, 155);
+    border-radius: 6px;
+    padding: 20px 16px;
+    width: 90%;
+    background-color: #ebe7eb;
+    justify-content: center;
+    align-items: center;
+    height: 10rem;
+    
+}
+.crear{
+    background-color: rgb(88, 36, 82);
+    border: none;
+    border-radius: 3px;
+    margin-top: 10px;
+    width: 35%;
+    padding: 5px;
+    color: #fff;
+    box-shadow: 0 0 10px 1px rgb(180, 178, 178);
+    cursor: pointer;
+}
+.p-crear-nuevos{
+    font-weight: 100;
+    color: rgb(136, 133, 133);
+    width: 90%;
+    
+    font-size: 10px;
+    text-align: justify;
+
+}
+
+@media (max-width: 320px) {
+    .contenedor-form-crear-canal{
+        display: grid;
+        padding: 0%;
+            }
+
+ .imagen-crear-canal-dos{
+    display: none;
+ }
+
+ .padre-crear-canal{
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+ }
+ .contenedor-form-crear-canal{
+    width: 200%;
+    margin-left: 30px; 
+ 
+}
+.p-crear-nuevos{
+    margin-top:-10px;
+  
+
+}
+.mail-crear-canal{
+    width: 65%;
+    font-size: 10px;
+    margin-left: 15%;
+
+}
+.imagen-crear-canal{
+    width: 35%;
+    margin-left: 35%;
+}
+.h2-crear-nuevo{
+    font-size: 16px;
+}
+}

@@ -1,0 +1,50 @@
+.root{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', Verdana, sans-serif;
+}
+.contenedor-lateral{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    width: 70px;
+    background-color: #400b41;
+
+    
+}
+.contenedor-menu-lateral{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2px;
+}
+.contenedor-nombre-menu-lateral{
+    display: flex;
+    flex-direction: column;
+    max-width: 50px;
+    height: 15px;
+    border-radius: 10px;    
+    color:#ffff;
+    font-size: 9px;
+    text-overflow: ellipsis;
+    overflow-wrap: break-word;
+    text-align: center;
+    
+   
+}
+.iconos-verticales-barra-lateral-izq{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 25px;
+    color:#ffff;
+    
+}

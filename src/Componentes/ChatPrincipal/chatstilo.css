@@ -1,0 +1,164 @@
+.contenedor-chat{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffff;
+    justify-content: space-between;
+    height: auto;
+   
+
+}
+h2{
+    font-size: 20px;
+    font-weight: 700;
+}
+.contenedor-chat-hijo{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: #ffff;
+    justify-content: space-between;
+    height: 70px;
+}
+
+.primer-titulo{
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    align-items: center;
+    margin-top: 0;
+    
+}
+.primer-contact-icon{
+    margin-right: 30px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    gap:15px;
+}
+.sub-primer-contact-icon, .subsub-primer-contact-icon{
+    display: flex;
+    flex-direction: row;
+    border: solid 1px rgb(221, 218, 218);
+    border-radius: 6px;
+    height: 32px;
+    align-content: center;
+    align-items: center;
+    
+}
+.image-contact{
+    padding: 2px;
+    border: 2px solid white;
+    border-radius: 9px;   
+}
+.subsub-primer-contact-icon{
+    font-size: 20px;
+    color: rgb(110, 107, 107)
+
+}
+.image-number{
+    font-size: 15px;
+    color: rgb(110, 107, 107);
+    padding-right: 10px;
+}
+.contenedor-btn-chats{
+    display: flex;
+    flex-direction: row;
+    gap:15px;
+    margin-bottom: 10px;
+    border-bottom: solid 1px gray;
+}
+.children-chat{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    text-align: center;
+
+}
+.btn-children{
+    background-color: #ffff;
+    font-size: 14px;
+    color: rgb(58, 56, 56);
+    cursor: pointer;
+    border: none;
+    align-content: center;
+    font-weight: 700;
+
+    
+}
+.btn-children:hover{
+    border-bottom: solid 2px rgb(134, 54, 134);
+}
+
+.chat{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 8px;
+    border-bottom: solid 1px rgb(197, 193, 193);
+    gap:20px;
+  
+    
+}
+.fecha-chat{
+    border: solid 1px gray;
+    font-size: 12px;
+    width: 130px;
+    border-radius: 12px;
+    position: absolute;
+    left: 40%;
+    top:-6px;
+    
+}
+
+.chat-li{
+    font-size: 14px;
+    font-weight: 100;
+    display: flex;
+    gap:10px;
+    margin-top: -10px;
+    
+}
+
+.img-chatitem{
+    width: 45px;
+    border-radius: 12px;
+    height: 45px;
+
+}  
+  
+.toyrepodrida{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+ 
+}
+.props-nombre{
+    font-weight:bold;
+}
+.enviar-mensaje{
+    width: 100%;
+}
+
+@media (max-width: 320px) {
+    
+    
+    .contenedor-chat{
+        padding: 0;
+        margin: 0;
+    }
+    .primer-contact-titulo{
+        font-size: 10px;
+    } .titulo-consultas{
+        font-size: 16px;
+    }
+    .image-contact{
+width: 14px;
+    }
+.mensaje-chat-stilo{
+    font-size: 12px;
+}
+
+}

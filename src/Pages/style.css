@@ -1,0 +1,54 @@
+.contenedor-init{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.logo{
+    margin-top: 10px;
+}
+
+@media (max-width: 320px) {
+        
+    .contenedor-init{
+    
+        display: flex;
+        flex-direction: row;
+        gap:150px;
+       
+    }}
+    
+
+    @media (max-width: 320px) {
+        .centro {
+            display: flex;
+            flex-direction: column; 
+            align-items: center; 
+            }
+    
+        .canales-app {
+            width: 60%; 
+            margin-bottom: 10px; 
+        }
+    
+        .chat-principal {
+            width: 60%; 
+            margin-top: 10px; 
+        }
+    
+        .chat-ppal {
+            display: flex;
+            justify-content: center; 
+            margin-bottom: 10px; 
+        }
+    
+        
+        .chat-list {
+            width: 60%; 
+            overflow-y: auto; 
+        }
+        
+        .iconos-derechos {
+            font-size: 24px; 
+        }
+    }

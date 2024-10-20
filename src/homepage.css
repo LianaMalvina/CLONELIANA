@@ -1,0 +1,94 @@
+:root{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #400b41;
+}
+
+.navegador-home-page{
+    display: flex;
+}
+.div{
+    display: flex;
+    flex-direction: row;
+  margin-top: 2px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.lateral-app{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    background-color:#400b41;
+    width: 70px;
+    margin-top: 0;
+}
+
+.centro{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+   
+   
+}
+.canales-app{
+    display: flex;
+    flex-direction: column;
+    width: 325px;
+    background-color: #744676;
+    border-radius: 10px;
+      
+}
+.chat-principal{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: #ffff;
+    color: black;
+    width: 940px;
+    border-radius: 10px;
+    
+}
+.chat-ppal{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+@media (max-width: 320px) {
+    .navegador-home-page {
+    display: none;
+    }
+
+    .div {
+        flex-direction: column; 
+    }
+
+    .lateral-app {
+       display: none;
+    }
+
+    .centro {
+        flex-direction: column; 
+        font-size: 12px;
+    }
+
+    .canales-app {
+        width: 95%;
+        border-radius: 5px; 
+        font-size: 12px;
+    }
+
+    .chat-principal {
+        width: 95%; 
+        border-radius: 5px;
+        font-size: 11px;
+    }
+
+    .chat-ppal {
+        flex-direction: column;
+        font-size: 10px;
+    }
+}
