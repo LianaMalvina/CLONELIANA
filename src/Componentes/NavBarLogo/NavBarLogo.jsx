@@ -1,4 +1,4 @@
-import React from 'react'
+/*import React from 'react'
 
 const NavbarLogo = () => {
   return (
@@ -14,4 +14,4 @@ const NavbarLogo = () => {
   )
 }
 
-export default NavbarLogo
+export default NavbarLogo*/

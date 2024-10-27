@@ -4,13 +4,16 @@ import Navegador from '../Componentes/NavBar/Navegador'
 import { Lateral } from '../Componentes/BarraIzquierda/Lateral'
 import { lateral_izq } from '../Componentes/BarraIzquierda/lateralizquierda'
 import Canales from '../Componentes/Canales/Canales'
-import { canales_data_inicial } from '../Componentes/Canales/data_canales'
+import { canales_data_inicial} from '../Componentes/Canales/data_canales'
 import ChatList from '../Componentes/ChatPrincipal/ChatList'
 import { IconosDerechos } from '../Componentes/ChatPrincipal/EnviarMensaje/TituloChats'
+import { useParams } from 'react-router-dom'
 
 
 
-const HomePage = () => {
+const WorkspaceScreen = () => {
+
+
 
   const [chats, setChats] = useState([])
 
@@ -27,7 +30,7 @@ const HomePage = () => {
   return (
     <>
       <Navegador className="navegador-home-page"/>
-      <div className='div'>
+      <div className='div-home'>
         <div className='lateral-app'>
           <span style={{
             color: 'black', textAlign: 'center', backgroundColor: '#ababad',
@@ -41,7 +44,9 @@ const HomePage = () => {
 
         <div className='centro'>
           <div className='canales-app'>
-            <Canales canales_data={canales_data_inicial} />
+          
+            <Canales canales_data={canales_data_inicial} /> 
+             
           </div>
 
           <div className='chat-principal'>
@@ -49,6 +54,7 @@ const HomePage = () => {
             <div className='chat-ppal'>
               <IconosDerechos />
             </div>
+
             <ChatList chats={chats} agregarMensaje={agregarMensaje}/>
              
           </div>
@@ -58,7 +64,7 @@ const HomePage = () => {
   )
 }
 
-export default HomePage
+export default WorkspaceScreen
 
 
 

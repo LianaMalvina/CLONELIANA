@@ -1,33 +1,32 @@
 .contenedor-padre{
     width: 100%;
     height: 100%;
-    background-color: #fff;
+    background-color: #400b41;
     justify-content: center;
     align-items: center;
     align-content: center;
     flex-direction: column;
+    color: #fff;
 }
 
 .contenedor-random{
-    background-color: #fff;
-    width: 70%;
-    height: 100vh;
-    justify-content: center;
+    background-color: #400b41; 
+   justify-content: center;
     align-content: center;
     align-items: center;
-    margin-left: 20%;
+  
 }
 .cargando {
     position: absolute;
     font-size: 18px;
     color:#ffff;
     animation: girar 3s linear forwards;
-    left:630px;
-    top:200px;
+   justify-items: center;
     background-color: rgb(161, 70, 131);
     border-radius: 100px;
     height: 100px;
     align-content: center;
+    justify-content: center;
     box-shadow: 0 0 10px 2px gray;
        
 }
@@ -41,39 +40,41 @@
 .imagen-random{
 
     height: 40px;
-    margin-left: 35%;
     margin-top: 50px;
 
 }
-
+.random-up{
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
 .up-random{
     width: 60px;
     height: 60px;
     background-color: dimgrey;
-    margin-left: 40%;
+   
     align-content: center;
     justify-content: center;
     margin-top: 150px;
     border-radius: 12px;
     color: #fff;
-    padding-left: 20px;
     font-size: 30px;
 }
 .h1-random{
     font-size: 40px;
     font-weight:bold;
-    margin-left: 80px;
+   
 }
 .texto-random-uno , .texto-random-dos{
     font-size: 20px;
     color: rgb(99, 93, 93);
-    margin-left: 90px;
     font-weight: 100;
-
  }
 .link-random{
     color: blue;
-    margin-left: 420px;
+    
 }
 
 
@@ -81,47 +82,49 @@
     .cargando{
         display: none;
     }
-    .contenedor-padre {
-        padding: 10px;
-    }
-
+   .contenedor-padre{
+    margin-right: -60%;
+    padding: 0;
+   }
+.random-up{
+    margin-top: -70px;
+}
     .contenedor-random {
-        width: 90%; 
-        margin-left: 5%; 
+        width: 100%; 
+        margin-left: -60%;
+     
     }
 
     .imagen-random {
         height: 30px; 
-        margin-left: auto;
-        margin-right: auto; 
-        margin-top: 30px; 
+      
+        margin-top: 20px; 
     }
 
     .up-random {
         width: 50px; 
         height: 50px; 
-        margin-left: auto; 
-        margin-right: auto; 
+       
         margin-top: 100px; 
         font-size: 24px; 
-        padding-left: 15px; 
+       
     }
 
     .h1-random {
         font-size: 24px; 
-        margin-left: 0; 
+        
         text-align: center; 
     }
 
     .texto-random-uno,
     .texto-random-dos {
         font-size: 16px; 
-        margin-left: 0; 
+      
         text-align: center; 
     }
 
     .link-random {
-        margin-left: 0;
+        
         text-align: center;
         display: block; 
         margin-top: 10px; 

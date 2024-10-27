@@ -1,31 +1,25 @@
 main{
     max-width: 100%;
+    overflow: hidden;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
+
 
 .contenedor-init{
     
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    max-width: 100%;
 }
 .logo{
     margin-top: 10px;
 }
-.app-pagina-inicio{
-    max-width: 100%;
 
-}
-section{
-    max-width: 100%;
-}
 @media (max-width: 320px) {
-    main{
-        max-width:100% ;
-    }
         
     .contenedor-init{
-    max-width: 80%;
+    
         display: flex;
         flex-direction: row;
         gap:150px;
@@ -34,9 +28,6 @@ section{
     
 
     @media (max-width: 320px) {
-        section{
-            max-width: 100%;
-        }
         .centro {
             display: flex;
             flex-direction: column; 

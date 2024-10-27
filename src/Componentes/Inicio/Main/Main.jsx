@@ -23,7 +23,7 @@ const Main = () => {
                         <div className='tu-email'>Espacios de trabajo para lianakachuk@gmail.com</div>
                         <div className='iconos-works'>
 
-                            <div className='div'>
+                            <div className='div-work'>
                                 <img className='slack-work' src='https://a.slack-edge.com/80588/img/avatars-teams/ava_0026-88.png'></img>
 
 

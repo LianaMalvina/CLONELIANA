@@ -14,7 +14,7 @@ const CrearNuevoCanal = () => {
         evento.preventDefault()
 
         const formulario = new FormData(evento.target);
-        const nuevoespacio = formulario.get('nombre-espacio')
+        const nuevoespacio = formulario.get('nombre_espacio')
         const canalnuevo = formulario.get('nombre_canal')
 
 
@@ -57,9 +57,9 @@ const CrearNuevoCanal = () => {
                             Para crear un nuevo espacio de trabajo, completa tus datos aquí debajo.</p>
 
                         <form onSubmit={handleSubmit} className='formulario-crear-canal'>
-                            <label className='name-esp' htmlFor='crear-espacio-name'>Nombre del Canal</label>
-                            <input placeholder='Escribí aquí el nombre de tu canal' name='nombre-espacio' id='crear-espacio-name' required />
-                            <label className='name-esp' htmlFor='crear-canal-name'>Confirma</label>
+                            <label className='name-esp' htmlFor='crear-espacio-name'>Nombre del Espacio</label>
+                            <input placeholder='Escribí aquí el nombre de tu espacio' name='nombre_espacio' id='crear-espacio-name' required />
+                            <label className='name-esp' htmlFor='crear-canal-name'>Nombre del canal</label>
                             <input
                                 placeholder='Escribí aquí el nombre de tu canal'
                                 name='nombre_canal'

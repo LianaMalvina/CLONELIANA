@@ -14,7 +14,7 @@ const Navegador = () => {
     navigate('/')}
 
   return (
-    <div>
+    
     <header className='header'>
         <nav className='navbar'>
             <a href='#' className='arrows'>
@@ -36,7 +36,7 @@ const Navegador = () => {
             </a>
         </nav>
     </header>
-</div>
+
   )
 }
 
