@@ -1,4 +1,4 @@
-.contenedor-padre{
+.contenedor-padre-random{
     width: 100%;
     height: 100%;
     background-color: #400b41;
@@ -83,7 +83,7 @@
         display: none;
     }
    .contenedor-padre{
-    margin-right: -60%;
+
     padding: 0;
    }
 .random-up{
@@ -91,7 +91,7 @@
 }
     .contenedor-random {
         width: 100%; 
-        margin-left: -60%;
+    
      
     }
 

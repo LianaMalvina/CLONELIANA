@@ -1,3 +1,9 @@
+:root{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans',Verdana, sans-serif;}
+
 .body{
     box-sizing: border-box;
     padding: 0;
@@ -5,6 +11,8 @@
     overflow: hidden;
     overflow-y: hidden;
     display: flex;
+    width: 100vw;
+    height: 100vh;
     
 }
 .padre-crear-canal{
@@ -16,7 +24,7 @@
     justify-content: center;
     text-align: center;
     width: 100%;
-    height: auto;
+    height: 100%;
   
 }
 

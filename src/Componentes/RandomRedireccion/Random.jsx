@@ -4,7 +4,7 @@ import './estilosrandom.css'
 
 const Random = () => {
   return (
-    <div className='contenedor-padre'>
+    <div className='contenedor-padre-random'>
       <div className='contenedor-random'>
         <img className='imagen-random' src='https://a.slack-edge.com/bv1-13/slack_logo-ebd02d1.svg'></img>
 
