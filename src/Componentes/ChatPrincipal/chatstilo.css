@@ -149,10 +149,22 @@ h2{
         padding: 0;
         margin: 0;
     }
+    .contenedor-chat-hijo{
+        display: flex;
+        flex-direction: column;
+    }
     .primer-contact-titulo{
-        font-size: 10px;
-    } .titulo-consultas{
-        font-size: 16px;
+        font-size: 8px;
+        width: 20px;
+    }
+     .titulo-consultas{
+        font-size: 13px;
+    }
+    .subsub-primer-contact-icon{
+        font-size: 8px;
+    }
+    .FaEllipsisVertical{
+        font-size: 9px;
     }
     .image-contact{
 width: 14px;
@@ -160,5 +172,27 @@ width: 14px;
 .mensaje-chat-stilo{
     font-size: 12px;
 }
-
+.contenedor-btn-chats{
+    font-size: 11px;
+   
+}
+.btn-children{
+    font-size: 10px;
+  
+}
+.iconos-children{
+    display: none;
+}
+.chat{
+    margin-top: -5px;
+}
+.img-chatitem{
+    display: none;
+}
+.mensaje-chat-stilo{
+    text-align: justify;
+    font-size: 10px;
+    padding: 5px;
+    margin-top: -15px;
+}
 }

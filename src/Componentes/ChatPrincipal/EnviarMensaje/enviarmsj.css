@@ -114,10 +114,11 @@ input::placeholder{
 
 @media (max-width:320px) {
  .contenedor-form-msj{
-    width: 99%; margin-left: 0;}
+    width: 90%; margin-left: 0;}
     .botones-msj-nav{
 
-    font-size: 14px;
+    font-size: 8px;
+    color: #000;
 
  }   .contenedor-nav-msj{
     width: 93%;
@@ -127,7 +128,17 @@ input::placeholder{
 width: 95%;
  } .form-btn-icons, .form-icons{
     width: 95%;
- }.form-icon-class{
-    font-size: 12px;
+ }
+ .form-icon-class{
+    font-size: 9px;
+    color: #000;
+
+ }
+ .form-icon-class-right{
+    font-size: 9px;
+    color: #000;
+ }
+ .form-icons{
+    margin-left: -5;
  }
 }

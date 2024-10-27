@@ -1,13 +1,4 @@
-body, html{
-    max-width: 100vw;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-content: center;
-    padding:0 ;
-    margin: 0%;
-}
-.header {
+.header-chat {
     display: flex;
     flex-direction: row;
     background-color: #400b41;
@@ -119,13 +110,8 @@ input::-webkit-input-placeholder {
 
 
     @media (max-width: 320px) {
-        .header{
-            display: none;
-            overflow: hidden;
-            visibility: none;
-            background-color: #400b41;
-            padding: 0;
-            margin: 0;
+        .header-chat{
+          width: 320px;
         }
         .Navbar{
            max-width: 100%;

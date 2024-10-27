@@ -70,15 +70,19 @@ body{
 }
 
 @media (max-width: 320px) {
-    .div-home{
-        overflow: hidden;
+    
         
-    }.lateral-app{
+    
+    .div-centro{
+        width: 320px;
+
+    }
+    .lateral-app{
         display: none;
     }.centro{
-        width: 200%;
+        width: 100%;
     } .canales-app, .chat-principal{
-        width: 200%;
+        width: 320px;
     }
 }
     

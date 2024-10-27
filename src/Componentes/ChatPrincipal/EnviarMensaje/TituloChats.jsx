@@ -32,7 +32,7 @@ export const IconosDerechos = () => {
                         <span><AiFillCustomerService /></span>
                         <span><AiOutlineDown /></span>
                     </div>
-                    <span><FaEllipsisVertical /></span>
+                    <span className="FaEllipsisVertical"><FaEllipsisVertical /></span>
                 </div>
             </div>
             <div className="contenedor-btn-chats">
@@ -46,7 +46,7 @@ export const IconosDerechos = () => {
                     <div><span><GrMultiple /></span><button className="btn-children">Archivos</button></div>
                 </div>
                 <div className="children-chat">
-                    <div><button className="btn-children"><GrAdd /></button></div>
+                    <div className="iconos-children"><button className="btn-children"><GrAdd /></button></div>
                 </div>
             </div>
             <div className="chat">

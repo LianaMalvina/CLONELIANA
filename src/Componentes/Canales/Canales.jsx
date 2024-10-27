@@ -14,16 +14,16 @@ const Canales = () => {
         return(
             <>
             <div className='canales-home'>
-            <h2>UTN PWI TM LUN-MIE</h2>
-            <h3>Hilos de conversación</h3>
-            <h4>Borradores y enviados</h4>
-            <h4>Canales</h4>
+            <h2 className='h-espacio-trabajo'>UTN PWI TM LUN-MIE</h2>
+            <h3 className='h-espacio-trabajo'>Hilos de conversación</h3>
+            <h4 className='h-espacio-trabajo'>Borradores y enviados</h4>
+            <h4 className='h-espacio-trabajo'>Canales</h4>
             </div>
             {
               espaciosnuevos.map((espacionuevo)=>{
                
                 return(
-                  <div key={espacionuevo.id}>
+                  <div key={espacionuevo.id} className='espacio-nuevo-id'>
                     <Link style={{textDecoration:'none'}}><h3 style={{color:'#ffff', fontSize:'16px',
                       marginLeft:'30px'}} ># {espacionuevo.titulo}</h3></Link>              
                   </div>

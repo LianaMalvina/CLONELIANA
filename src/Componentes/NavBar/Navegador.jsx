@@ -15,7 +15,7 @@ const Navegador = () => {
 
   return (
     
-    <header className='header'>
+    <header className='header-chat'>
         <nav className='navbar'>
             <a href='#' className='arrows'>
             <div className='vacio-uno'></div>
