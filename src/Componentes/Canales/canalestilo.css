@@ -32,6 +32,8 @@ margin: 10px;}
         display: flex;
         width:100% ;
        flex-direction: column;   
+       margin-top: 350px;
+       
     }
     .h-espacio-trabajo{
 
@@ -43,6 +45,7 @@ font-weight: 100;
         font-family:'Courier New', Courier, monospace;
         font-size: 10px;
         text-align: start;
+        overflow-x: scroll;
     }
     .contenedor-otros-items{
         color: #ffff;

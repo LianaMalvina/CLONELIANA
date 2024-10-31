@@ -244,4 +244,13 @@ width: 14px;
 .mensaje-chat-stilo{
     margin-top:5px;
 }
+.coso{
+   margin-bottom: 200px; 
+   top: 0;
+    }
+    .enviar-mensaje{
+        width: 90%;
+     margin-bottom: 300px;
+    }
+    
 }
