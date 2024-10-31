@@ -6,7 +6,10 @@
     background-color: #400b41;
 
 }
-
+.image-logo{
+    height: 40px;
+    padding-top: 10px;
+}
 .btn-navegador-inicio{
     background-color: #400b41;
     color:#ffff;
@@ -89,14 +92,20 @@ border-top: none;
         display: flex;
         flex-direction:row; 
      justify-content: space-between;
-        padding: 10px; 
-        gap: 65%;
+        width: 320px;
+        height: 70px;
+        
        }
-
+.image-logo{
+    width:60px;
+    height: 30px;
+}
 
     .menu-toggle {
         display: block;
-        margin-top: -10px;
+    margin-top: 0;
+    height: 30px;
+    margin-right: 0;
     }
     
     .menu-list {

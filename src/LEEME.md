@@ -6,6 +6,8 @@ Tuve muchos problemas con el responsive, en el sentido de que en la compu lo pon
 pero no logro que en la vista de celular se vea bien, directamente se rompe todo, no entiendo lo que pasa,
 es como que no se activa la funcion.
 
+En la página principal o de inicio, al hacerla de 320, no pude hacer que el menu se vaya al margen derecho.
+
 En la pagina de CrearCanal me quedó detras del contenedor padre del canal, o sea, en el body, todo de color
 violeta, y realmente no se porque ni de donde viene. Por ejemplo en la pagina Random me pasa lo mismo,
 si le cambio algo en el body me afecta a la pagina de inicio por ejemplo, y me sobra un fondo, que es el
@@ -14,10 +16,7 @@ de CSS se trabaja o como lo arreglo???
 
 En la vista de mensajerias y canales no pude hacer que quede a la vista el último MENSAJE ENVIADO.-
 
-Me cuesta mucho el tema funciones, el proyecto al no ser clonado, tuve que tratar de comprenderlo y aunque suene
-feo, me costo mucho, mi principal apoyo fueron las clases, las que veía una y otra vez, tambien el chat cgp,
-que de todas formas si no estas orientado, no te sirve de nada. Lo que es crear para cada espacio de trabajo y 
-canal su respectiva vista de mensajeria se me hizo imposible, quede agotada de intentarlo, quizas tenga q ver
+Me cuesta mucho el tema funciones, el proyecto al no ser clonado de las clases, tuve que arrancarlo de cero, tratar de comprenderlo y aunque suene feo, me costo mucho, mi principal apoyo fueron las clases, las que veía una y otra vez, tambien el chat cgp, que de todas formas si no estas orientado, no te sirve de nada. Lo que es crear para cada espacio de trabajo y canal su respectiva vista de  mensajeria se me hizo imposible, quede agotada de intentarlo, quizas tenga q ver
 por como fue planteado el proyecto, se q hay redundancias, muchas cosas las creé y no las utilicé.
 
 me sería de gran ayuda para mi carrera, orientarme o explicarme o mastrarme sobre este proyecto como sería
