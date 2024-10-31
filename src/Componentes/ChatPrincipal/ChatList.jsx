@@ -19,7 +19,7 @@ const ChatList = ({ chats, agregarMensaje }) => {
 
   return (
     <>
-      <div>
+      <div className='coso'>
         {ChatJSX}
       </div>
       <div className='enviar-mensaje'>

@@ -1,12 +1,15 @@
 .contenedor-form-msj{
-    width: 96%;
-    min-height: 130px;
+    width: 98%;
+    min-height: 120px;
     border: solid 1px #e2e2e2;
     border-radius: 12px;
     justify-content: center;
-    margin-left: 20px;
+    margin-left: 10px;
     background-color: #ffff;
     margin-bottom: 5px;
+    position: sticky;
+    z-index: 1;
+    top:75%;
 }
 
 .contenedor-nav-msj{
@@ -16,6 +19,7 @@
     justify-content: normal;
     background-color: #f8f8f8;
     gap: 15px;  
+    height: 50px;
 }
 
 .iconos-nav-msj{
@@ -114,18 +118,18 @@ input::placeholder{
 
 @media (max-width:320px) {
  .contenedor-form-msj{
-    width: 90%; margin-left: 0;}
+    width: 100%;}
     .botones-msj-nav{
 
     font-size: 8px;
     color: #000;
 
  }   .contenedor-nav-msj{
-    width: 93%;
+    width: 100%;
     gap: 1px;
  }
  .form-enviar-msj{
-width: 95%;
+width: 100%;
  } .form-btn-icons, .form-icons{
     width: 95%;
  }
@@ -138,7 +142,12 @@ width: 95%;
     font-size: 9px;
     color: #000;
  }
- .form-icons{
-    margin-left: -5;
- }
+ input::placeholder{
+    color: #a5a1a1;
+    font-size: 11px;
+    
+}
+input{
+    width: 97%;
+}
 }

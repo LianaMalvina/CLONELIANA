@@ -12,8 +12,7 @@ si le cambio algo en el body me afecta a la pagina de inicio por ejemplo, y me s
 html o root, y body, que si lo pinto de otro color me afecta a otras páginas. Cómo es esto??? con qué tipo 
 de CSS se trabaja o como lo arreglo???
 
-en la vista de mensajerias y canales no me permite modificar la className= canales-app del archivo hmepage.css dentro de
-la mediaqueries para que sea de 320 px, lo mismo en el panel de EnviarMensajes.
+En la vista de mensajerias y canales no pude hacer que quede a la vista el último MENSAJE ENVIADO.-
 
 Me cuesta mucho el tema funciones, el proyecto al no ser clonado, tuve que tratar de comprenderlo y aunque suene
 feo, me costo mucho, mi principal apoyo fueron las clases, las que veía una y otra vez, tambien el chat cgp,

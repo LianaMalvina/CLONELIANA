@@ -5,9 +5,12 @@
     background-color: #ffff;
     justify-content: space-between;
     height: auto;
-   
-
+    position: absolute; 
+    top: 0; 
+    left: 0;
+    z-index: 1; 
 }
+
 h2{
     font-size: 20px;
     font-weight: 700;
@@ -83,13 +86,13 @@ h2{
     cursor: pointer;
     border: none;
     align-content: center;
-    font-weight: 700;
-
-    
+    font-weight: 700;  
 }
+
 .btn-children:hover{
     border-bottom: solid 2px rgb(134, 54, 134);
 }
+
 
 .chat{
     width: 100%;
@@ -99,7 +102,15 @@ h2{
     margin-top: 8px;
     border-bottom: solid 1px rgb(197, 193, 193);
     gap:20px;
-  
+    height: auto;
+    
+}
+.coso{
+    overflow-x:hidden;
+    overflow-y: auto;
+    top:-75px;
+    max-height: 350px;
+    bottom: 0;
     
 }
 .fecha-chat{
@@ -119,13 +130,17 @@ h2{
     display: flex;
     gap:10px;
     margin-top: -10px;
+    position: relative;
     
 }
-
+small{
+    padding-left: 15px;
+}
 .img-chatitem{
     width: 45px;
     border-radius: 12px;
     height: 45px;
+    padding-left: 15px;
 
 }  
   
@@ -138,30 +153,53 @@ h2{
 .props-nombre{
     font-weight:bold;
 }
+
 .enviar-mensaje{
     width: 100%;
+    margin-top: 50px;
 }
 
 @media (max-width: 320px) {
     
-    
-    .contenedor-chat{
+    .chat, .chat-li{
+        width: 250px;
+    }
+   .chat-principal, .contenedor-chat{
         padding: 0;
         margin: 0;
+        width: 250px;
     }
     .contenedor-chat-hijo{
         display: flex;
         flex-direction: column;
+        width: 250px;
+    }
+    .contenedor-btn-chats, .chat-li, .toyrepodrida, .enviar-mensaje {
+        width: 250px;
+    }
+    .contenedor-btn-chats{
+        margin-top: 20px;
     }
     .primer-contact-titulo{
         font-size: 8px;
         width: 20px;
+        margin-top:5px ;
     }
      .titulo-consultas{
         font-size: 13px;
     }
+    .sub-primer-contact-icon{
+        width: 85px;
+        height: 23px;
+    }
+    .image-number{
+        font-size: 10px;
+    }
     .subsub-primer-contact-icon{
         font-size: 8px;
+        width: 35px;
+        height: 23px;
+
     }
     .FaEllipsisVertical{
         font-size: 9px;
@@ -183,9 +221,7 @@ width: 14px;
 .iconos-children{
     display: none;
 }
-.chat{
-    margin-top: -5px;
-}
+
 .img-chatitem{
     display: none;
 }
@@ -194,5 +230,18 @@ width: 14px;
     font-size: 10px;
     padding: 5px;
     margin-top: -15px;
+}
+.fecha-chat{
+    width: 50px;
+    font-size: 8px;
+    top: 8px;
+    
+}
+.props-nombre{
+    font-size: 11px;
+    margin-left: 0;
+}
+.mensaje-chat-stilo{
+    margin-top:5px;
 }
 }

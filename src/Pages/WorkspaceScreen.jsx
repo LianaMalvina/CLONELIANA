@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect,useRef} from 'react'
 import '../homepage.css'
 import Navegador from '../Componentes/NavBar/Navegador'
 import { Lateral } from '../Componentes/BarraIzquierda/Lateral'
@@ -7,7 +7,7 @@ import Canales from '../Componentes/Canales/Canales'
 import { canales_data_inicial} from '../Componentes/Canales/data_canales'
 import ChatList from '../Componentes/ChatPrincipal/ChatList'
 import { IconosDerechos } from '../Componentes/ChatPrincipal/EnviarMensaje/TituloChats'
-import { useParams } from 'react-router-dom'
+
 
 
 
@@ -15,7 +15,9 @@ const WorkspaceScreen = () => {
 
 
 
-  const [chats, setChats] = useState([])
+const [chats, setChats] = useState([])
+const mensajesRef = useRef(null)
+
 
   const agregarMensaje = (mensaje) => {
       const nuevoChat = {
@@ -25,8 +27,15 @@ const WorkspaceScreen = () => {
           nombre: 'Usuario', 
           mensaje: mensaje, 
       }
-      setChats([...chats, nuevoChat])
+      setChats((prevChats) => [...prevChats, nuevoChat])
   }
+  useEffect(() => {
+    if (mensajesRef.current) {
+        // Mover el scroll hacia arriba cuando se agrega un mensaje
+        mensajesRef.current.scrollTop =  mensajesRef.current.scrollHeight; // Establece el scroll en la parte superior
+    }
+}, [chats]);
+
   return (
     <>
       <Navegador className="navegador-home-page"/>
@@ -55,7 +64,7 @@ const WorkspaceScreen = () => {
               <IconosDerechos />
             </div>
 
-            <ChatList chats={chats} agregarMensaje={agregarMensaje}/>
+            <ChatList chats={chats} agregarMensaje={agregarMensaje} ref={mensajesRef} className='ultimo'/>
              
           </div>
         </div>

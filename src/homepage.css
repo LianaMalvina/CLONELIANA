@@ -81,8 +81,11 @@ body{
         display: none;
     }.centro{
         width: 100%;
-    } .canales-app, .chat-principal{
+    } .canales-app{
         width: 320px;
+    }
+    .chat-ppal, .chat-principal{
+        width: 300px;
     }
 }
     

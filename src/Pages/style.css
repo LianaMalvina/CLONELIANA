@@ -15,6 +15,50 @@ main{
 .logo{
     margin-top: 10px;
 }
+.div-home{
+    height: 750px;
+}
+.lateral-app{
+    height: 80%;
+     ;
+}
+.centro {
+    display: flex;
+    flex-direction: row; 
+
+    width: 100vw; 
+    height: 760px;
+    }
+
+.canales-app {
+ 
+   width: 25%;
+   height: 95%;
+}
+
+.chat-principal {
+    
+   width: 73%;
+    justify-content: center;
+    justify-items: center;
+    height: 95%;
+    position: relative;
+    
+   
+}
+.ultimo{
+    overflow-y: auto;
+}
+
+.chat-ppal {
+    margin-top: 225px;
+    display: flex;
+    justify-content: center; 
+    width: 98%;
+    height: 600px;
+    
+}
+
 
 @media (max-width: 320px) {
         
@@ -35,13 +79,15 @@ main{
             }
     
         .canales-app {
-            width: 60%; 
+            width: 90%; 
             margin-bottom: 10px; 
         }
     
         .chat-principal {
-            width: 60%; 
+            width: 90%; 
             margin-top: 10px; 
+            justify-content: center;
+            justify-items: center;
         }
     
         .chat-ppal {
@@ -51,12 +97,7 @@ main{
         }
     
         
-        .chat-list {
-            width: 60%; 
-            overflow-y: auto; 
-        }
+
         
-        .iconos-derechos {
-            font-size: 24px; 
-        }
+        
     }
