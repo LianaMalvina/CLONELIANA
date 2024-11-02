@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { canales_data_inicial, crearNuevosCanales } from './data_canales'
+import { canales_data_inicial, crearNuevoWorkspace } from './data_canales'
 import { useNavigate } from 'react-router-dom'
 import { useEffect } from 'react'
 import './estilonuevocanal.css'
@@ -7,25 +7,30 @@ import './estilonuevocanal.css'
 
 const CrearNuevoCanal = () => {
     const navigation = useNavigate()
-    const [nombre_canal, setNombre_canal] = useState('')
+
+    const [canal, setNombre_canal] = useState('')
     const [errorCrearcanalRepeated, setErrorcrearcanalRepeated] = useState(false)
 
-    const handleSubmit = (evento) => {
+    const handleSubmitCrearNewWorkspace = (evento) => {
         evento.preventDefault()
 
         const formulario = new FormData(evento.target);
-        const nuevoespacio = formulario.get('nombre_espacio')
-        const canalnuevo = formulario.get('nombre_canal')
+        const workspace = formulario.get('workspace')
+        const canal = formulario.get('canal')
 
 
-        if (nuevoespacio && canalnuevo && !errorCrearcanalRepeated) {
-            const espacio = {
-                titulo: nuevoespacio,
-                canal: canalnuevo,
+        if (workspace && canal && !errorCrearcanalRepeated) {
+            const nuevoWorkspace = {
+      
+       
+                name: workspace,
+                canales: [{
+                    name: canal,
+                }],
             }
 
-            crearNuevosCanales(espacio)
-            navigation('/home')
+            crearNuevoWorkspace(nuevoWorkspace)
+            navigation('/workspace')
         }
     }
 
@@ -33,15 +38,15 @@ const CrearNuevoCanal = () => {
         setNombre_canal(evento.target.value)
     }
 
-    const isInUseCrearCanalName = (nombre_canal) => {
+    const isInUseCrearCanalName = (nombreCanal) => {
         return canales_data_inicial.some(grupo =>
-            grupo.canales.some(canal => canal.name === nombre_canal)
+            grupo.canales && grupo.canales.some(canal => canal.name === nombreCanal)
         )
     }
 
     useEffect(() => {
-        setErrorcrearcanalRepeated(isInUseCrearCanalName(nombre_canal))
-    }, [nombre_canal])
+        setErrorcrearcanalRepeated(isInUseCrearCanalName(canal))
+    }, [canal])
 
     return (
         <div className='padre-crear-canal'>
@@ -56,24 +61,25 @@ const CrearNuevoCanal = () => {
                         <p className='p-crear-nuevo'>Slack le da a tu equipo un lugar donde pueden hablar y trabajar juntos.
                             Para crear un nuevo espacio de trabajo, completa tus datos aquí debajo.</p>
 
-                        <form onSubmit={handleSubmit} className='formulario-crear-canal'>
+                        <form onSubmit={handleSubmitCrearNewWorkspace} className='formulario-crear-canal'>
                             <label className='name-esp' htmlFor='crear-espacio-name'>Nombre del Espacio</label>
-                            <input placeholder='Escribí aquí el nombre de tu espacio' name='nombre_espacio' id='crear-espacio-name' required />
+                            <input placeholder='Escribí aquí el nombre de tu espacio' name='workspace' 
+                            id='crear-espacio-name' required />
                             <label className='name-esp' htmlFor='crear-canal-name'>Nombre del canal</label>
                             <input
                                 placeholder='Escribí aquí el nombre de tu canal'
-                                name='nombre_canal'
+                                name='canal'
                                 id='crear-canal-name'
                                 required
-                                value={nombre_canal}
+                                value={canal}
                                 onChange={handleChangeCrearcanalname}
                             />
                             {errorCrearcanalRepeated ? (
                                 <span style={{ color: 'red' }}>Nombre en uso</span>
                             ) : (
-                                nombre_canal.length > 0 && <span style={{ color: 'green' }}>Nombre disponible</span>
+                                canal.length > 0 && <span style={{ color: 'green' }}>Nombre disponible</span>
                             )}
-                            {<button type='submit' className='crear' disabled={errorCrearcanalRepeated || nombre_canal.length === 0}>
+                            {<button type='submit' className='crear' disabled={errorCrearcanalRepeated || canal.length === 0}>
                                 Crear canal</button>}
 
                         </form>

@@ -3,80 +3,85 @@ import { useEffect } from 'react';
 
 export const canales_data_inicial = [
     {
-        titulo: 'Espacio inicial',
-        id: 5,
+        name: 'Espacio inicial',
+        id: 1,
         icon: ['PLAYDOWN'],
-        canales: [
+        channels: [
             {
                 name: 'consultas',
                 id: 1,
-                mensajes: [
-                    { fecha: '2024-01-01', image: 'image_url', nombre: 'Usuario', texto: 'Hola' },
+                messages: [
+                    { id:1, fecha: '2024-01-01', image: 'image_url', author: 'Usuario', text: 'Hola' },
                 ]
             },
             {
                 name: 'general',
                 id: 2,
-                mensajes: [ { fecha: '2024-01-01', image: 'image_url', nombre: 'Usuario', texto: 'Hola' },]
+                messages: [  { id:1, fecha: '2024-01-01', image: 'image_url', author: 'Usuario', text: 'Hola' },]
             },
             {
                 name: 'utilidades',
                 id: 3,
-                mensajes: [ { fecha: '2024-01-01', image: 'image_url', nombre: 'Usuario', texto: 'Hola' },]
+                messages: [ { id:1, fecha: '2024-01-01', image: 'image_url', author: 'Usuario', text: 'Hola' },]
             },
             {
                 name: 'tareas-entregas',
                 id: 4,
-                mensajes: [ { fecha: '2024-01-01', image: 'image_url', nombre: 'Usuario', texto: 'Hola' },]
+                messages: [{ id:1, fecha: '2024-01-01', image: 'image_url', author: 'Usuario', text: 'Hola' },]
             },
         ],
     },
     {
-        titulo: 'Espacio avanzado',
-        id: 5,
+        name: 'Espacio avanzado',
+        id: 2,
         icon: ['PLAYDOWN'],
-        canales: [
+        channels: [
             {
                 name: 'consultas',
                 id: 1,
-                mensajes: [
-                    { fecha: '2024-01-01', image: 'image_url', nombre: 'Usuario', texto: 'Hola' },
+                messages: [
+                    { id:1, fecha: '2024-01-01', image: 'image_url', author: 'Usuario', text: 'Hola' },
                 ]
             },
             {
                 name: 'general',
                 id: 2,
-                mensajes: [ { fecha: '2024-01-01', image: 'image_url', nombre: 'Usuario', texto: 'Hola' },]
+                messages: [{ id:1, fecha: '2024-01-01', image: 'image_url', author: 'Usuario', text: 'Hola' },]
             },
             {
                 name: 'utilidades',
                 id: 3,
-                mensajes: [ { fecha: '2024-01-01', image: 'image_url', nombre: 'Usuario', texto: 'Hola' },]
+                messages: [ { id:1, fecha: '2024-01-01', image: 'image_url', author: 'Usuario', text: 'Hola' },]
             },
             {
                 name: 'tareas-entregas',
                 id: 4,
-                mensajes: [ { fecha: '2024-01-01', image: 'image_url', nombre: 'Usuario', texto: 'Hola' },]
+                messajes: [ { id:1, fecha: '2024-01-01', image: 'image_url', author: 'Usuario', text: 'Hola' },]
             },
         ],
     },
 ];
 
-const obtenerNuevoCanal = () => {
-    let nuevoscanales = localStorage.getItem('nuevoscanales')
-    if (nuevoscanales) {
-        return JSON.parse(nuevoscanales)
+const obtenerWorkspaces = () => {
+    let workspaces = localStorage.getItem('workspaces')
+    if (workspaces) {
+        return JSON.parse(workspaces)
     } else {
-        localStorage.setItem('nuevoscanales', JSON.stringify(canales_data_inicial))
+        localStorage.setItem('workspaces', JSON.stringify(canales_data_inicial))
         return canales_data_inicial
     }
 };
 
-const crearNuevosCanales = (nuevoCanal) => {
-    nuevoCanal.id = uuidv4()
-    let nuevoscanales = obtenerNuevoCanal()
-    nuevoscanales.push(nuevoCanal)
-    localStorage.setItem('nuevoscanales', JSON.stringify(nuevoscanales))
+const crearNuevoWorkspace = (nuevoWorkspace) => { //esta funcion se activa al llamar el form crear ..
+    nuevoWorkspace.id = uuidv4()
+
+    //llama a los workspaces ya creadis y sobre ellos pushea a los nuevos
+    let workspaces = obtenerWorkspaces()
+    workspaces.push(nuevoWorkspace)
+    //guarda la lista actualizada en el localStore
+    localStorage.setItem('workspaces', JSON.stringify(workspaces))
 };
 
-export { obtenerNuevoCanal, crearNuevosCanales}
+
+
+export { obtenerWorkspaces, crearNuevoWorkspace}

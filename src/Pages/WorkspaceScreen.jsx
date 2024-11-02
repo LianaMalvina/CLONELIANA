@@ -1,4 +1,5 @@
 import React, {useState, useEffect,useRef} from 'react'
+import {useParams} from 'react-router-dom'
 import '../homepage.css'
 import Navegador from '../Componentes/NavBar/Navegador'
 import { Lateral } from '../Componentes/BarraIzquierda/Lateral'
@@ -12,7 +13,6 @@ import { IconosDerechos } from '../Componentes/ChatPrincipal/EnviarMensaje/Titul
 
 
 const WorkspaceScreen = () => {
-
 
 
 const [chats, setChats] = useState([])
@@ -53,19 +53,14 @@ const mensajesRef = useRef(null)
 
         <div className='centro'>
           <div className='canales-app'>
-          
-            <Canales canales_data={canales_data_inicial} /> 
-             
+            <Canales canales_data={canales_data_inicial}/>  
           </div>
 
           <div className='chat-principal'>
-
             <div className='chat-ppal'>
               <IconosDerechos />
             </div>
-
             <ChatList chats={chats} agregarMensaje={agregarMensaje} ref={mensajesRef} className='ultimo'/>
-             
           </div>
         </div>
       </div>

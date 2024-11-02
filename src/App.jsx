@@ -16,14 +16,14 @@ function App() {
     <>
     <Routes>
       <Route path='/' element={<InitPage/>}/>
-      <Route path='/inicio/home' element={<WorkspaceScreen/>}/>
-      <Route path='/home/' element={<WorkspaceScreen/>}/>
+      <Route path='/inicio/workspace' element={<WorkspaceScreen/>}/>
+      <Route path='/workspace' element={<WorkspaceScreen/>}/>
       <Route path='/random' element={<Random/>}/>
       {/**este es para crear un nuevo canal de trabajo */}
       <Route path='/new' element={<CrearNuevoCanal/>}/>
       <Route path='/inicio/new' element={<CrearNuevoCanal/>}/>
      
-      <Route path="/new/home" element={<WorkspaceScreen/>}/>  
+      <Route path="/new/workspace" element={<WorkspaceScreen/>}/>  
     </Routes>
       
     </>

@@ -15,7 +15,7 @@ const Random = () => {
         <h1 className='h1-random'>Iniciando UTN PWI TM LUN Y MIE</h1>
         <p className='texto-random-uno'>Haz clic en Abrir Slack para iniciar la aplicación para ordenador.</p>
         <p className='texto-random-dos'>¿No funciona? También puedes usar Slack en el navegador.</p>
-        <Link to={'/inicio/home/'} className='link-random'>ir</Link>
+        <Link to={'/inicio/workspace/'} className='link-random'>ir</Link>
       </div>
     </div>
   )

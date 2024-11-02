@@ -1,14 +1,16 @@
 import React from 'react'
 import './canalestilo.css'
 import { ICONS_CANALES } from './iconos-canales'
-import { obtenerNuevoCanal } from './data_canales'
+import { obtenerWorkspaces } from './data_canales'
+
+import ChannelList from './ChanneList'
 import { Link } from 'react-router-dom'
 
 
 
 const Canales = () => {
 
-    const espaciosnuevos = obtenerNuevoCanal()
+    const workspaces = obtenerWorkspaces()
 
      
         return(
@@ -20,12 +22,15 @@ const Canales = () => {
             <h4 className='h-espacio-trabajo'>Canales</h4>
             </div>
             {
-              espaciosnuevos.map((espacionuevo)=>{
+              workspaces.map((workspace)=>{
                
                 return(
-                  <div key={espacionuevo.id} className='espacio-nuevo-id'>
-                    <Link style={{textDecoration:'none'}}><h3 style={{color:'#ffff', fontSize:'16px',
-                      marginLeft:'30px'}} ># {espacionuevo.titulo}</h3></Link>              
+                  <div className='espacio-nuevo-id'>
+                
+                    <Link to={'./workspace/'} style={{textDecoration:'none'}}>
+                      
+                      <h3 style={{color:'#ffff', fontSize:'16px',
+                      marginLeft:'30px'}} ># {workspace.name}</h3></Link>              
                   </div>
                 )
               })
