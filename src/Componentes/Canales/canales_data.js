@@ -1,4 +1,4 @@
-export const canales =[
+/*export const canales =[
     {
         id:1,
         nombre: 'Consultas',
@@ -11,4 +11,4 @@ export const canales =[
         id:3,
         nombre:'Tareas'
     }
-]
+]*/

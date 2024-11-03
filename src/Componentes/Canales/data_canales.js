@@ -81,7 +81,11 @@ const crearNuevoWorkspace = (nuevoWorkspace) => { //esta funcion se activa al ll
     //guarda la lista actualizada en el localStore
     localStorage.setItem('workspaces', JSON.stringify(workspaces))
 };
+const obtenerWorkspacePorId =(id)=>{
+    let workspaces = obtenerWorkspaces()
+    let workspace = workspaces.find(workspace =>workspace.id== Number(id))
+    return workspace
+}
 
 
-
-export { obtenerWorkspaces, crearNuevoWorkspace}
+export { obtenerWorkspaces, crearNuevoWorkspace, obtenerWorkspacePorId}

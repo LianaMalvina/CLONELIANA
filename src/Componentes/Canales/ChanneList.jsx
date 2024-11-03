@@ -1,4 +1,4 @@
-import React from 'react'
+/*import React from 'react'
 
 import { canales } from './canales_data'
 import ChannelItem from './ChannelItem'
@@ -19,4 +19,4 @@ const ChannelList = () => {
   )
 }
 
-export default ChannelList
+export default ChannelList*/

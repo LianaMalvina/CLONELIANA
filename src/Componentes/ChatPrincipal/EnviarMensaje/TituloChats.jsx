@@ -4,9 +4,11 @@ import '../chatstilo.css'
 import { GrAdd, GrMultiple, GrDocumentVerified } from "react-icons/gr";
 import { RiChat1Fill } from "react-icons/ri";
 import { pantallaChat } from "../chat_data";
+import { obtenerWorkspaces } from "../../Canales/data_canales";
 
 export const IconosDerechos = () => {
 
+    
     return (
 
         <div className='contenedor-chat'>
@@ -14,7 +16,7 @@ export const IconosDerechos = () => {
                 <div className='primer-titulo'>
                     <div className='primer-contact-titulo'>
                         <h2 className="titulo-consultas">
-                            #consultas
+                           #consultas
                         </h2>
                     </div>
                 </div>

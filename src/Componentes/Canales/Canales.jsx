@@ -3,7 +3,7 @@ import './canalestilo.css'
 import { ICONS_CANALES } from './iconos-canales'
 import { obtenerWorkspaces } from './data_canales'
 
-import ChannelList from './ChanneList'
+
 import { Link } from 'react-router-dom'
 
 
@@ -16,25 +16,25 @@ const Canales = () => {
         return(
             <>
             <div className='canales-home'>
-            <h2 className='h-espacio-trabajo'>UTN PWI TM LUN-MIE</h2>
+            <h2 className='h-espacio-trabajo'>{
+              workspaces.map((workspace)=>{
+               
+                return(
+                  <div key={workspace.id} className='espacio-nuevo-id'>
+                
+                    <Link to={`/workspace/${workspace.id}`} style={{textDecoration:'none'}}>
+                      
+                      <h2 style={{color:'#ffff', fontSize:'20px',
+                      fontFamily:'sans-serif', marginLeft:'10px'}} > {workspace.name}</h2></Link>              
+                  </div>
+                )
+              })
+            }</h2>
             <h3 className='h-espacio-trabajo'>Hilos de conversación</h3>
             <h4 className='h-espacio-trabajo'>Borradores y enviados</h4>
             <h4 className='h-espacio-trabajo'>Canales</h4>
             </div>
-            {
-              workspaces.map((workspace)=>{
-               
-                return(
-                  <div className='espacio-nuevo-id'>
-                
-                    <Link to={'./workspace/'} style={{textDecoration:'none'}}>
-                      
-                      <h3 style={{color:'#ffff', fontSize:'16px',
-                      marginLeft:'30px'}} ># {workspace.name}</h3></Link>              
-                  </div>
-                )
-              })
-            }
+            
             <div className='contenedor-otros-items'>
                 <div className=''>
                 <p>Mensajes directos</p>

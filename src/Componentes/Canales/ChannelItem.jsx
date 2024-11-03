@@ -1,4 +1,4 @@
-import React from 'react'
+/*import React from 'react'
 
 const ChannelItem = ({id, nombre}) => {
   return (
@@ -8,5 +8,5 @@ const ChannelItem = ({id, nombre}) => {
   )
 }
 
-export default ChannelItem
+export default ChannelItem*/
 

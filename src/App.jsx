@@ -4,7 +4,7 @@ import WorkspaceScreen from './Pages/WorkspaceScreen'
 import InitPage from './Pages/InitPage'
 import Random from './Componentes/RandomRedireccion/Random'
 import CrearNuevoCanal from './Componentes/Canales/CraarNuevoCanal'
-import Canales from './Componentes/Canales/Canales'
+
 
 
 
@@ -16,8 +16,10 @@ function App() {
     <>
     <Routes>
       <Route path='/' element={<InitPage/>}/>
-      <Route path='/inicio/workspace' element={<WorkspaceScreen/>}/>
-      <Route path='/workspace' element={<WorkspaceScreen/>}/>
+      <Route path='/workspace/' element={<WorkspaceScreen/>}/>
+      <Route path='/inicio/workspace/' element={<WorkspaceScreen/>}/>
+      <Route path='/workspace/:workspace_id' element={<WorkspaceScreen/>}/>
+      <Route path='/inicio/workspace/:workspace_id' element={<WorkspaceScreen/>}/>
       <Route path='/random' element={<Random/>}/>
       {/**este es para crear un nuevo canal de trabajo */}
       <Route path='/new' element={<CrearNuevoCanal/>}/>

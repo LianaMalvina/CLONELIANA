@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { canales_data_inicial, crearNuevoWorkspace } from './data_canales'
+import { canales_data_inicial, crearNuevoWorkspace, obtenerWorkspaces } from './data_canales'
 import { useNavigate } from 'react-router-dom'
 import { useEffect } from 'react'
 import './estilonuevocanal.css'
@@ -30,6 +30,7 @@ const CrearNuevoCanal = () => {
             }
 
             crearNuevoWorkspace(nuevoWorkspace)
+            obtenerWorkspaces()
             navigation('/workspace')
         }
     }
