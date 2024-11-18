@@ -1,5 +1,6 @@
 import React from 'react'
-import { useState } from 'react'
+import { useState, useContext } from 'react'
+import { UserContext } from '../../Usuarios/UserContext';
 import './enviarmsj.css'
 import { MdFoggy, MdFormatListNumbered } from "react-icons/md";
 import { FiList, FiAlignLeft } from "react-icons/fi";
@@ -17,6 +18,7 @@ import ChatItem from '../ChatItem';
 const EnviarMensaje = ({ agregarMensaje}) => {
     const [error, setError] = useState({ text: '', isError: false })
     const [mensaje, setMensaje] = useState('')
+    const { nombreUsuario } = useContext(UserContext)
 
     const handleSubmitMessage = (evento) => {
         evento.preventDefault()
@@ -24,7 +26,7 @@ const EnviarMensaje = ({ agregarMensaje}) => {
         if (!mensaje) {
             setError({ isError: true, text: 'No has escrito nada' })
         } else {
-            agregarMensaje(mensaje)
+            agregarMensaje({usuario: nombreUsuario, texto: mensaje})
             setMensaje('')
             setError({ text: '', isError: false })
         }

@@ -12,7 +12,8 @@ const ChatItem = (props) => {
           <span>{props.image && (
             <img src={props.image} className='img-chatitem' alt="Chat image" />
           )}</span>
-          <div className='toyrepodrida'>
+
+          <div className='contenido-mensaje-nombre'>
             <span className='props-nombre'>{props.nombre}</span>
             <p className='mensaje-chat-stilo'>{props.mensaje}</p>
           </div>

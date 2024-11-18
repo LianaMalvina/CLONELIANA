@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './main.css'
 import { GoChevronDown } from "react-icons/go";
 import { TbWorld } from "react-icons/tb";
@@ -8,9 +8,11 @@ import { RiTwitterXFill } from "react-icons/ri";
 import { FaYoutube, FaArrowDown } from "react-icons/fa";
 import { IoIosCloudDownload } from "react-icons/io";
 import { Link } from 'react-router-dom';
+import Usuarios from '../../Usuarios/Usuarios';
+import { UserContext } from '../../Usuarios/UserContext';
 
 const Main = () => {
-    
+    const { nombreUsuario } = useContext(UserContext)
     return (
         <main className='main'>
             <section className='primer-vista'>
@@ -20,7 +22,14 @@ const Main = () => {
                             ¡Hola de nuevo!</h1>
                     </div>
                     <div className='espacios-trabajo'>
-                        <div className='tu-email'>Espacios de trabajo para lianakachuk@gmail.com</div>
+                        <div className='tu-email'>Espacios de trabajo para {nombreUsuario}</div>
+                             
+                        
+                        <div>
+                             <span>No sos {nombreUsuario}</span>
+                             <Link to={'/usuario'}>Iniciá sesión o registrate aquí</Link>
+                        </div>
+                       
                         <div className='iconos-works'>
 
                             <div className='div-work'>

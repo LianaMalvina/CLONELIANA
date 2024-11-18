@@ -81,11 +81,31 @@ const crearNuevoWorkspace = (nuevoWorkspace) => { //esta funcion se activa al ll
     //guarda la lista actualizada en el localStore
     localStorage.setItem('workspaces', JSON.stringify(workspaces))
 };
+
 const obtenerWorkspacePorId =(id)=>{
     let workspaces = obtenerWorkspaces()
     let workspace = workspaces.find(workspace =>workspace.id== Number(id))
     return workspace
 }
 
+const buscarWorkspacePorId = (workspace_id)=>{
+    let workspaces = localStorage.getItem('workspaces')
+workspaces = JSON.parse(workspaces)
+return workspaces.find(workspace => workspace.id === workspace_id)
+}
 
-export { obtenerWorkspaces, crearNuevoWorkspace, obtenerWorkspacePorId}
+const crearCanal = (workspace_id, name_new_channel)=>{
+    const workspace_seleccionado = buscarWorkspacePorId(workspace_id)
+    const new_channel = {
+        name: name_new_channel,
+        messages: [],
+        id:uuidv4()
+    }
+    workspace_seleccionado.channel.push(new_channel)
+
+workspace_seleccionado.channel.push(new_channel)
+localStorage.setItem('workspaces', JSON.stringify(workspaces))
+}
+
+
+export { obtenerWorkspaces, crearNuevoWorkspace, obtenerWorkspacePorId, crearCanal}

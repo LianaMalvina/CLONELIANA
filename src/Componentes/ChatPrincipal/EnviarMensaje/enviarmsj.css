@@ -64,6 +64,7 @@ input{
 .form-enviar-msj{
     display: flex;
     flex-direction: column;
+    
 }
 .form-btn-icons{
     width: 100%;

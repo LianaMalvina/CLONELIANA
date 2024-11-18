@@ -13,6 +13,7 @@ const InitPage = () => {
         <main>
           <Main />
         </main>
+        
       </section>
     </>
   )
